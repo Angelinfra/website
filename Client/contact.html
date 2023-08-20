@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>Angel Infra Software Consulting</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4D86J49CFJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4D86J49CFJ');
+</script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/LOGO3.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!-- ------- Contact Us----- -->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.9050962502!2d78.24323169843647!3d17.412608642170827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1691508663532!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Hyderabad</h5>
+              <p>Telangana,India</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>
+                +91 8309 243 068 <br />
+                +91 7569 261 540
+              </h5>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>angelinfrasoft@gmail.com</h5>
+              <p>Email us your Quries</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form id="myForm" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+              onchange="HandleForm(this.name)"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter email address"
+              required
+              onchange="HandleForm(this.name)"
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter your subject"
+              required
+              onchange="HandleForm(this.name)"
+            />
+            <textarea
+              row="8"
+              name="message"
+              placeholder="Message"
+              required
+              onchange="HandleForm(this.name)"
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------Footer--------- -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        AngelInfra is a leading software training organization with 5+years of
+        experience providing training on cutting edge technologies <br />We
+        provide Career Building video courses on various top and trending IT
+        courses like DevOps, Cloud, Full Stack, Python, Data warehousing,
+        Testing and many more.
+      </p>
+      <hr class="styler" />
+      <div class="icons">
+        <a
+          href="https://www.facebook.com/profile.php?id=100093348081585"
+          target="new"
+          class="targetLinks"
+          type="text/html"
+          ><i class="fa fa-facebook"></i
+        ></a>
+
+        <a
+          href="https://twitter.com/AngelinfraS"
+          target="new"
+          class="targetLinks"
+          type="text/html"
+        >
+          <i class="fa fa-twitter"></i
+        ></a>
+
+        <a
+          href="https://www.instagram.com/angelinfrasoftwareconsulting/"
+          target="_blank"
+          class="targetLinks"
+          type="text/html"
+        >
+          <i class="fa fa-instagram"></i
+        ></a>
+
+        <a
+          href="https://www.linkedin.com/in/angelinfra-softwareconsulting-b4a14527b/"
+          target="new"
+          class="targetLinks"
+          type="text/html"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+
+        <a
+          href="https://wa.me/917569261540?text=Hello%2C%20Welcome%20to%20Angelinfra "
+          target="new"
+          class="targetLinks"
+          type="tet/html"
+          ><i class="fa fa-whatsapp"></i
+        ></a>
+
+        <a
+          href="https://youtube.com/@AngelInfraSoftwareConsulting"
+          target="new"
+          class="targetLinks"
+        >
+          <i class="fa fa-youtube"></i>
+        </a>
+      </div>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+
+      //--posting contact details--------------------------------------------------------------------------------------
+
+      //--data holding object
+      let data = {
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      };
+
+      //----updating data method
+      const HandleForm = (e) => {
+        //console.log(document.getElementsByName(e)[0].value);
+        data[e] = document.getElementsByName(e)[0].value;
+      };
+
+      //---posting data to server
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", async (event) => {
+          event.preventDefault();
+         //console.log(data);
+          const response = await fetch(
+            "https://pink-clumsy-fly.cyclic.app/postuser/",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(data),
+            }
+          );
+
+          const responseData = await response.text();
+          alert("Your Request is Submitted");
+        });
+    </script>
+  </body>
+</html>
